@@ -1,0 +1,60 @@
+ty@ty-PC MINGW64 /e/network
+$ git init
+Initialized empty Git repository in E:/network/.git/
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git add .
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git coomit -m "start"
+git: 'coomit' is not a git command. See 'git --help'.
+
+The most similar command is
+        commit
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git commit -m "start"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'ty@ty-PC.(none)')
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git config --global user.email "hengty174@gmail.com"
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git config --global user.name "eanghengty"
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git commit -m "start"
+[master (root-commit) c000968] start
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 text1.rtf
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git remote add origin https://github.com/eanghengty/window-repos.git
+
+ty@ty-PC MINGW64 /e/network (master)
+$ git push -f origin master
+fatal: An error occurred while sending the request.
+fatal: The request was aborted: Could not create SSL/TLS secure channel.
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (2/2), done.
+Writing objects: 100% (3/3), 347 bytes | 173.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+To https://github.com/eanghengty/window-repos.git
+ * [new branch]      master -> master
+
+ty@ty-PC MINGW64 /e/network (master)
+$
